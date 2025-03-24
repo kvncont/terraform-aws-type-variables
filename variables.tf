@@ -8,6 +8,21 @@ variable "assume_role_arn" {
   description = "The ARN of the role to assume by Terraform"
 }
 
+variable "string" {
+  type = string
+  description = "The ARN of the role to assume by Terraform"
+}
+
+variable "optional" {
+  type = optional(string)
+  description = "The ARN of the role to assume by Terraform"
+}
+
+variable "bool" {
+  type = bool
+  description = "The ARN of the role to assume by Terraform"
+}
+
 variable "my_list" {
   type = list(string)
   description = "Tests list"
